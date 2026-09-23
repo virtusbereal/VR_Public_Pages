@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ADSPACE — Error</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; }
+  html, body { height: 100%; margin: 0; }
+  body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #374151;
+    background: #ffffff;
+  }
+  main {
+    flex-grow: 1;
+    display: grid;
+    place-items: center;
+    padding: 24px 16px;
+  }
+  .card {
+    width: 100%;
+    max-width: 420px;
+    background: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 2px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.15), 0 2px 4px -2px rgba(0, 0, 0, 0.15);
+    padding: 36px 32px;
+    text-align: center;
+  }
+  .logo {
+    display: block;
+    margin: 0 auto 28px;
+    height: 22px;
+    width: auto;
+  }
+  .icon {
+    display: block;
+    margin: 0 auto 18px;
+    color: #dc2626;
+  }
+  h1 {
+    margin: 0 0 12px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #223b3c;
+  }
+  p {
+    margin: 0 0 8px;
+    font-size: 14px;
+    color: #4b5563;
+  }
+  .btn {
+    margin-top: 20px;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 4px 20px 2px;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+  }
+  .btn-blue {
+    color: #f3f4f6;
+    background: #2563eb;
+  }
+  .btn-blue:hover {
+    background: #1d4ed8;
+  }
+  .btn-blue:focus-visible {
+    outline: none;
+    box-shadow: 0 0 0 3px #dbeafe;
+  }
+  .corner {
+    display: flex;
+    justify-content: flex-end;
+    padding: 8px 16px;
+  }
+  #themeToggle {
+    cursor: pointer;
+    color: #87d4d7;
+    background: none;
+    border: none;
+    padding: 4px;
+    line-height: 0;
+  }
+  #themeToggle:hover {
+    color: #487476;
+  }
+  #themeToggle svg { display: none; }
+  #themeToggle.is-dark svg.icon-bulb { display: block; }
+  #themeToggle:not(.is-dark) svg.icon-bulb-off { display: block; }
+  footer {
+    background: #4b5563;
+    color: #ffffff;
+    text-align: center;
+    font-size: 10px;
+    padding: 4px 24px;
+  }
+
+  html.dark body { background: #000000; color: #d1d5db; }
+  html.dark .card {
+    background: #000000;
+    border-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 6px -1px rgba(255, 255, 255, 0.15), 0 2px 4px -2px rgba(255, 255, 255, 0.15);
+  }
+  html.dark .icon { color: #f87171; }
+  html.dark h1 { color: #94e8eb; }
+  html.dark p { color: #9ca3af; }
+  html.dark .btn-blue { color: #111827; background: #60a5fa; }
+  html.dark .btn-blue:hover { background: #93c5fd; }
+  html.dark .btn-blue:focus-visible { box-shadow: 0 0 0 3px #1e3a8a; }
+  html.dark #themeToggle { color: #94e8eb; }
+  html.dark #themeToggle:hover { color: #94e8eb; }
+  html.dark footer { background: #9ca3af; color: #000000; }
+</style>
+</head>
+<body>
+  <main>
+    <div class="card">
+      <svg class="logo" viewBox="0 0 362.96 74.22" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="ADSPACE">
+        <g fill="#a7a8a9">
+          <path d="M7.62,45.23h-3.81c-.46,0-.63-.25-.51-.74L17.47,5.06c.11-.34.34-.51.68-.51h4.5c.38,0,.63.17.74.51l14.11,39.44c.19.49.02.74-.51.74h-3.81c-.38,0-.63-.17-.74-.51l-3.47-10.13H11.89l-3.53,10.13c-.11.34-.36.51-.74.51ZM20.31,9.95l-6.94,20.14h14.11l-6.94-20.14h-.23Z"/>
+          <path d="M57.64,45.23h-13.88c-.46,0-.68-.21-.68-.63V5.17c0-.42.23-.63.68-.63h13.88c4.63,0,8.25,1.28,10.87,3.84,2.62,2.56,3.93,6.16,3.93,10.78v11.67c0,4.59-1.31,8.14-3.93,10.64-2.62,2.5-6.24,3.76-10.87,3.76ZM47.97,8.98v31.7h9.62c3.19,0,5.62-.83,7.31-2.48,1.69-1.65,2.53-4.11,2.53-7.37v-11.67c0-3.34-.84-5.87-2.53-7.6-1.69-1.73-4.13-2.59-7.31-2.59h-9.62Z"/>
+        </g>
+        <g fill="#53575a">
+          <path d="M108.23,34.19c0,3.87-1.4,6.78-4.21,8.74-2.81,1.95-6.37,2.93-10.7,2.93-2.73,0-5.21-.44-7.43-1.31-2.22-.87-4.49-2.24-6.8-4.1-.3-.26-.34-.57-.11-.91l1.94-2.67c.26-.38.55-.44.85-.17,3.94,3,7.85,4.52,11.72,4.55,2.81,0,5.15-.59,7.03-1.76s2.82-2.9,2.82-5.18-.85-3.82-2.56-4.87c-1.71-1.04-4.4-1.96-8.08-2.76-1.9-.42-3.58-.91-5.06-1.48-1.48-.57-2.9-1.31-4.27-2.22-1.37-.91-2.42-2.07-3.16-3.47-.74-1.4-1.11-3.02-1.11-4.84,0-3.57,1.37-6.25,4.1-8.05s6.2-2.7,10.41-2.7c4.63,0,9.05,1.52,13.26,4.55.38.23.44.51.17.85l-1.88,2.67c-.23.34-.53.38-.91.11-3.41-2.35-7.09-3.58-11.04-3.7-2.77,0-5,.56-6.69,1.68-1.69,1.12-2.53,2.68-2.53,4.7s.82,3.53,2.45,4.55c1.63,1.02,4.13,1.92,7.51,2.67,1.71.38,3.18.76,4.41,1.14,1.23.38,2.51.9,3.84,1.56,1.33.66,2.4,1.39,3.21,2.19.82.8,1.49,1.82,2.02,3.07s.8,2.66.8,4.21Z"/>
+          <path d="M116.31,4.54h13.71c4.48,0,7.95,1.18,10.41,3.53,2.47,2.35,3.7,5.62,3.7,9.79s-1.23,7.49-3.7,9.84c-2.47,2.35-5.94,3.53-10.41,3.53h-9.5v13.37c0,.42-.21.63-.63.63h-3.58c-.42,0-.63-.21-.63-.63V5.17c0-.42.21-.63.63-.63ZM120.52,26.74h8.99c6.49,0,9.73-2.96,9.73-8.88s-3.24-8.82-9.73-8.82h-8.99v17.7Z"/>
+          <path d="M148.69,45.23h-3.81c-.46,0-.63-.25-.51-.74l14.17-39.44c.11-.34.34-.51.68-.51h4.5c.38,0,.63.17.74.51l14.11,39.44c.19.49.02.74-.51.74h-3.81c-.38,0-.63-.17-.74-.51l-3.47-10.13h-17.07l-3.53,10.13c-.11.34-.36.51-.74.51ZM161.38,9.95l-6.94,20.14h14.11l-6.94-20.14h-.23Z"/>
+          <path d="M210.26,41.53c-3.49,2.88-7.8,4.33-12.92,4.33-4.36,0-7.95-1.22-10.75-3.67-2.81-2.45-4.21-5.91-4.21-10.38v-13.77c0-4.51,1.39-8,4.18-10.44,2.79-2.45,6.34-3.67,10.67-3.67s8.55,1.33,12.12,3.98c.3.23.34.51.11.85l-1.82,2.67c-.23.3-.55.34-.97.11-2.81-2.05-5.98-3.07-9.5-3.07-3.19,0-5.64.85-7.37,2.56s-2.59,4.04-2.59,7v13.71c0,2.96.87,5.29,2.62,7s4.21,2.56,7.4,2.56c3.95,0,7.43-1.17,10.47-3.53.3-.3.59-.25.85.17l1.88,2.62c.23.42.17.74-.17.97Z"/>
+          <path d="M222.04,26.79v14h19.58c.42,0,.63.21.63.63v3.19c0,.42-.21.63-.63.63h-23.79c-.46,0-.68-.21-.68-.63V5.17c0-.42.23-.63.68-.63h22.99c.42,0,.63.21.63.63v3.19c0,.42-.21.63-.63.63h-18.78v13.32h17.47c.42,0,.63.23.63.68v3.13c0,.46-.21.68-.63.68h-17.47Z"/>
+        </g>
+        <g fill="#a7a8a9">
+          <path d="M254.25,45.23h-3.53c-.46,0-.68-.21-.68-.63V5.17c0-.42.23-.63.68-.63h4.32c.34,0,.59.15.74.46l8.82,16.05c1.52,2.81,3.03,5.8,4.55,8.99h.17c1.59-3.34,3.11-6.32,4.55-8.93l8.88-16.1c.11-.3.36-.46.74-.46h4.33c.42,0,.63.21.63.63v39.44c0,.42-.21.63-.63.63h-3.59c-.42,0-.63-.21-.63-.63v-17.19c0-3.83.11-8.97.34-15.42l-.11-.06c-.95,1.9-2.67,5.24-5.18,10.02l-7.11,13.2c-.19.3-.46.46-.8.46h-3.02c-.38,0-.63-.15-.74-.46l-7.11-13.2c-2.2-4.1-3.93-7.43-5.18-10.02l-.11.06c.19,8.04.28,13.18.28,15.42v17.19c0,.42-.21.63-.63.63Z"/>
+          <path d="M302.79,45.23h-3.53c-.46,0-.68-.21-.68-.63V5.17c0-.42.23-.63.68-.63h3.53c.42,0,.63.21.63.63v18.84l17.58-19.06c.26-.26.55-.4.85-.4h4.55c.3,0,.49.08.57.26s.02.35-.17.54l-16.33,17.53,17.47,21.57c.15.23.19.42.11.57-.08.15-.25.23-.51.23h-4.61c-.38,0-.65-.13-.8-.4l-14.91-18.55-3.81,3.93v14.4c0,.42-.21.63-.63.63Z"/>
+          <path d="M329.76,4.54h29.25c.46,0,.68.21.68.63v3.19c0,.42-.23.63-.68.63h-12.18v35.62c0,.42-.23.63-.68.63h-3.53c-.46,0-.68-.21-.68-.63V8.98h-12.18c-.42,0-.63-.21-.63-.63v-3.19c0-.42.21-.63.63-.63Z"/>
+        </g>
+      </svg>
+
+      <svg class="icon" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M12 9v4" />
+        <path d="M10.363 3.591l-8.106 13.534a1.914 1.914 0 0 0 1.636 2.871h16.214a1.914 1.914 0 0 0 1.636 -2.871l-8.106 -13.534a1.914 1.914 0 0 0 -3.274 0z" />
+        <path d="M12 16h.01" />
+      </svg>
+
+      <h1>Algo no salió bien</h1>
+      <p>Tuvimos un problema técnico y no pudimos cargar la página. Ya lo sabemos y estamos trabajando para restablecer el servicio.</p>
+
+      <button type="button" class="btn btn-blue" onclick="window.location.reload()">Reintentar</button>
+    </div>
+  </main>
+  <div class="corner">
+    <button id="themeToggle" type="button" aria-label="Cambiar tema">
+      <svg class="icon-bulb" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h1m8 -9v1m8 8h1m-15.4 -6.4l.7 .7m12.1 -.7l-.7 .7" /><path d="M9 16a5 5 0 1 1 6 0a3.5 3.5 0 0 0 -1 3a2 2 0 0 1 -4 0a3.5 3.5 0 0 0 -1 -3" /><path d="M9.7 17l4.6 0" /></svg>
+      <svg class="icon-bulb-off" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h1m8 -9v1m8 8h1m-15.4 -6.4l.7 .7m12.1 -.7l-.7 .7" /><path d="M11.089 7.083a5 5 0 0 1 5.826 5.84m-1.378 2.611a5.012 5.012 0 0 1 -.537 .466a3.5 3.5 0 0 0 -1 3a2 2 0 1 1 -4 0a3.5 3.5 0 0 0 -1 -3a5 5 0 0 1 -.528 -7.544" /><path d="M9.7 17h4.6" /><path d="M3 3l18 18" /></svg>
+    </button>
+  </div>
+  <footer>ADSPACE MKT &copy; 2026. Todos los Derechos Reservados.</footer>
+  <script>
+    (function () {
+      var stored = null;
+      try { stored = window.localStorage.getItem('visualModePreference'); } catch (e) {}
+      var isDark = stored ? stored === 'dark' : window.matchMedia('(prefers-color-scheme: dark)').matches;
+      var root = document.documentElement;
+      var toggle = document.getElementById('themeToggle');
+      function apply (dark) {
+        root.classList.toggle('dark', dark);
+        toggle.classList.toggle('is-dark', dark);
+      }
+      apply(isDark);
+      toggle.addEventListener('click', function () {
+        var next = !root.classList.contains('dark');
+        apply(next);
+        try { window.localStorage.setItem('visualModePreference', next ? 'dark' : 'light'); } catch (e) {}
+      });
+    })();
+  </script>
+</body>
+</html>
